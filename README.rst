@@ -22,6 +22,11 @@ and just supply time values as strings or doubles and not even know what is
 happening underneath.  After working with SOFA for a week I am convinced the
 pair-of-doubles strategy is quite sound and useful.
 
+No formal test suite is available yet but I have confirmed that the
+transformations in the examples below match expected values based on the
+examples in the `SOFA Time Scale and Calendar Tools
+<http://www.iausofa.org/2012_0301_C/sofa/sofa_ts_c.pdf>`_ tutorial.
+
 Note: SOFA and most official references talk about time "scales" not time
 "systems".  I find time "scale" confusing but we could easily change to that
 terminology.
