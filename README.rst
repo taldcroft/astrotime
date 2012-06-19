@@ -26,6 +26,13 @@ Note: SOFA and most official references talk about time "scales" not time
 "systems".  I find time "scale" confusing but we could easily change to that
 terminology.
 
+Build for testing
+------------------
+
+Build inplace with (requires Cython)::  
+
+  % python setup.py build_ext --inplace
+
 Examples
 --------
 
