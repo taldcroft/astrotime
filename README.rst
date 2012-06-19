@@ -37,8 +37,9 @@ Examples
 --------
 
 ::
-  >>> import astrotime
 
+  >>> import astrotime
+  
   >>> times = ['1999-01-01 00:00:00.123456789', '2010-01-01 00:00:00']
   >>> t = astrotime.Time(times, format='iso', system='utc')
   >>> t
@@ -59,7 +60,7 @@ Set system to TAI::
   array([ 0.0003718 ,  0.00039352])
 
 Get a new ``Time`` object which is referenced to the TT system (internal JD1 and JD1 are
-now with respect to TT system):
+now with respect to TT system)::
 
   >>> t.tt  # system property returns a new Time object
   <Time object: system='tt' format='iso' vals=['1999-01-01 00:01:04.307' '2010-01-01 00:01:06.184']>
@@ -76,6 +77,7 @@ Use properties to convert systems and formats.  Note that the UT1 to UTC
 transformation requires a supplementary value (``delta_ut1_utc``) that can be
 obtained by interpolating from a table supplied by IERS.  This will be included
 in the package later.
+::
 
   >>> t = astrotime.Time('2010-01-01 00:00:00', format='iso', system='utc')
   >>> t.set_delta_ut1_utc(0.3341)  # Explicitly set one part of the transformation
@@ -106,6 +108,7 @@ Set the output precision which is used for some formats::
 
 Transform from UTC to all supported time systems (TAI, TCB, TCG, TDB, TT, UT1,
 UTC).  This requires auxilliary information (latitude and longitude).
+::
 
   >>> lat = 19.48125
   >>> lon = -155.933222
