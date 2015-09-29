@@ -112,7 +112,7 @@ Set the output precision which is used for some formats::
   '2010-01-01 00:00:00.000000000'
 
 Transform from UTC to all supported time systems (TAI, TCB, TCG, TDB, TT, UT1,
-UTC).  This requires auxilliary information (latitude and longitude).
+UTC).  This requires auxiliary information (latitude and longitude).
 ::
 
   >>> lat = 19.48125
